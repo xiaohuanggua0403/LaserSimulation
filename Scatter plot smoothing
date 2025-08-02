@@ -1,0 +1,10 @@
+[M, N] = size(averageMatrix);
+[X, Y] = meshgrid(1:N, 1:M);
+Z = averageMatrix;
+
+surf(X, Y, Z)
+shading interp   
+colormap jet
+colorbar
+xlabel('X'); ylabel('Y'); zlabel('Z');
+title('Smooth Surface of averageMatrix')
