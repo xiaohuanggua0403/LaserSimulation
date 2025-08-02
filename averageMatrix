@@ -1,0 +1,8 @@
+matrices = {A1, A2, A3};
+
+sumMatrix = zeros(size(matrices{1}));
+for i = 1:length(matrices)
+    sumMatrix = sumMatrix + matrices{i};
+end
+
+averageMatrix = sumMatrix / length(matrices);
