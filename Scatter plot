@@ -1,0 +1,17 @@
+% % %averageMatrix to Scatter plot
+[M, N] = size(averageMatrix);
+%  X, Y mesh
+[X, Y] = meshgrid(1:N, 1:M);
+
+% vector change
+x = X(:);
+y = Y(:);
+z = averageMatrix(:);
+
+%drawing
+scatter3(x, y, z, 20, z, 'filled')  
+xlabel('Column')
+ylabel('Row')
+zlabel('Value')
+title('3D Scatter of averageMatrix')
+colorbar
